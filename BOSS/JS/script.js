@@ -16,8 +16,8 @@ var moi_y = 250;
 var boss_x = 150;
 var boss_y = 150;
 
-var poison_x = 400;
-var poison_y = 0;
+var poison_x = 0;
+var poison_y = 250;
 
 var bombe_x = 0;
 var bombe_y = 400;
@@ -42,7 +42,7 @@ pat2 = false;
 pat3 = false;
 pat4 = false;
 boum = false;
-pois = false;
+pois = true;
 poisstop = false;
 phase1 = false;
 phase2 = false;
@@ -70,21 +70,40 @@ paterne4.style.top = paterne4_y + "px";
 
 //poison
 if (pois){ 
-  window.setInterval(function() {
     if (moi_x >= poison_x && moi_y >= poison_y && moi_x <= (poison_x + 100) && moi_y <=( poison_y + 100) ){ 
     console.log('-1');
     poison.style.backgroundColor = "green";
+    window.setTimeout(a,300)
+    function a(){
+      console.log('-1');
+    }
+    window.setTimeout(b,600)
+    function b(){
+      console.log('-1');
+    }
+    window.setTimeout(c,900)
+    function c(){
+      console.log('-1');
+    }
+    window.setTimeout(d,1200)
+    function d(){
+      console.log('-1');
+    }
+    window.setTimeout(e,1500)
+    function e(){
+      console.log('-1');
+    }
   }
-  else { 
-      window.setTimeout(a, 5000)
+    else { 
+      window.setTimeout(a, 2000)
       function a() {
         poison.style.backgroundColor = "rgb(0, 0, 0, 0)";
-        pois = false;
-        
+        pois = false;  
       }
   }
-},500)
 }
+  
+
 
 
 //BOUM

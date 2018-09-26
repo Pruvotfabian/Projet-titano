@@ -1,0 +1,20 @@
+body{
+    background-color: #101214;
+    display: flex;
+    justify-content: center;
+}
+.tete{
+height: 400px;
+width: 200px;
+margin: 40px
+}
+
+.soldat{
+    background-image: url(../images/soldat.png)
+}
+.samourai{
+    background-image: url(../images/samourai.png)   
+}
+.paladin{
+    background-image: url(../images/paladin.png)
+}
